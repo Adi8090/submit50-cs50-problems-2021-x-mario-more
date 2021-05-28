@@ -1,0 +1,38 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+  
+    int n;
+    printf("Let's make Mario's double pyramid!\n");
+    do
+    {
+        n = get_int("hieght: ");
+    }
+  while (n < 0 || n > 23);
+    for (int i = 0; i < n; i++)
+    {
+        int number_of_spaces = (n - 1) - i;
+        int number_of_hashes = i + 1;
+
+            for (int j = 0; j < number_of_spaces; j++)
+        {
+            printf(" ");
+        }
+
+            for (int k = 0; k < number_of_hashes; k++)
+        {
+            printf("#");
+        }
+
+        printf("  ");
+
+    for (int k = 0; k < number_of_hashes; k++)
+        {
+            printf("#");
+        }
+
+        printf("\n");
+        }
+        }
